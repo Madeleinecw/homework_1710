@@ -1,32 +1,31 @@
 <template>
   <div id="app">
-    <search-bar v-on:search-button-click='searchPokemon'>
-
-    </search-bar>
+    <search-bar></search-bar>
+    <pokemon-detail></pokemon-detail>
   </div>
 </template>
 
 <script>
 import SearchBar from './components/SearchBar.vue'
+import PokemonDetail from './components/PokeDetail.vue'
 import { eventBus } from './main.js';
+
 
 export default {
   name: 'App',
   components: {
-    "search-bar": SearchBar
+    "search-bar": SearchBar,
+    "pokemon-detail": PokemonDetail
   },
 
   data() {
     return {
       pokemonList: [],
+      individualPokemon: []
     }
   },
 
-  created(){
-    eventBus.$on('search-button-click', (value) => { //NEW
-      this.searchPokemon(value);
-    });
-  },
+  
 
   mounted() {
     this.GetAllPokemon();
