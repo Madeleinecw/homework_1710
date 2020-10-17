@@ -10,12 +10,11 @@ import SearchBar from './components/SearchBar.vue'
 import PokemonDetail from './components/PokeDetail.vue'
 import { eventBus } from './main.js';
 
-
 export default {
   name: 'App',
   components: {
     "search-bar": SearchBar,
-    "pokemon-detail": PokemonDetail
+    "pokemon-detail": PokemonDetail,
   },
 
   data() {
@@ -38,11 +37,7 @@ export default {
         .then(data => this.pokemonList = data.results)
     },
 
-    searchPokemon(pokemon) {
-      fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
-        .then(results => results.json())
-        .then(data => console.log(data))
-    }
+    
   }
 }
 </script>
