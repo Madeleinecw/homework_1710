@@ -7,7 +7,7 @@
       
       <div id="item-1">
         <p v-for="(type, index) in pokemon.types" :key="index">Type: {{type.type.name}} </p>
-        <p>Height: {{pokemon.height}}</p>
+        <p>Height: {{pokemon.height * 10}}cm</p>
         <p>Weight: {{pokemon.weight}}g</p>
       </div>
         <div id="item-2">
