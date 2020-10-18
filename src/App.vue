@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img src="https://i.pinimg.com/564x/90/6e/dc/906edc8b6f1b7089442ce99ca0b5a7a2.jpg">
     <search-bar></search-bar>
     <pokemon-detail></pokemon-detail>
   </div>
@@ -9,6 +10,7 @@
 import SearchBar from './components/SearchBar.vue'
 import PokemonDetail from './components/PokeDetail.vue'
 import { eventBus } from './main.js';
+
 
 export default {
   name: 'App',

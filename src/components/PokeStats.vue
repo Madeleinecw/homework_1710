@@ -26,8 +26,8 @@ export default {
             ['HP', this.pokemon.stats[0].base_stat],
             ['Attack', this.pokemon.stats[1].base_stat],
             ['Defense', this.pokemon.stats[2].base_stat],
-            ['Special Attack', this.pokemon.stats[3].base_stat],
-            ['Special Defense', this.pokemon.stats[4].base_stat],
+            ['Sp. Attack', this.pokemon.stats[3].base_stat],
+            ['Sp. Defense', this.pokemon.stats[4].base_stat],
             ['Speed', this.pokemon.stats[5].base_stat]
         ]        
     },
